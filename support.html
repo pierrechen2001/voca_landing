@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>支援中心 — VOCA</title>
   <meta name="description" content="VOCA App 使用說明、常見問題解答與訂閱管理協助。" />
+  <meta name="theme-color" content="#4E7FA0" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
   <style>
     .support-grid {
@@ -30,10 +32,21 @@
       transform: translateY(-3px);
     }
 
-    .support-card .icon {
-      font-size: 36px;
-      margin-bottom: 14px;
-      display: block;
+    .support-card .icon-cell {
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 14px;
+      border-radius: var(--radius-lg);
+      background: rgba(78, 127, 160, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+
+    .support-card .icon-cell svg.lucide {
+      width: 26px;
+      height: 26px;
     }
 
     .support-card h3 {
@@ -132,7 +145,22 @@
       margin: 48px auto 0;
     }
 
-    .contact-section .icon { font-size: 40px; margin-bottom: 12px; }
+    .contact-section .icon-cell-contact {
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 12px;
+      border-radius: var(--radius-lg);
+      background: rgba(78, 127, 160, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+
+    .contact-section .icon-cell-contact svg.lucide {
+      width: 26px;
+      height: 26px;
+    }
 
     .contact-section h3 {
       font-size: 20px;
@@ -182,19 +210,19 @@
 
     <div class="support-grid">
       <div class="support-card">
-        <span class="icon">📲</span>
+        <div class="icon-cell" aria-hidden="true"><i data-lucide="smartphone"></i></div>
         <h3>開始使用</h3>
         <p>首次設定、小工具加入方法，以及 App 基本操作指引。</p>
         <a href="#getting-started">查看說明 →</a>
       </div>
       <div class="support-card">
-        <span class="icon">💳</span>
+        <div class="icon-cell" aria-hidden="true"><i data-lucide="credit-card"></i></div>
         <h3>訂閱管理</h3>
         <p>訂閱方案說明、如何取消訂閱、還原購買等相關問題。</p>
         <a href="#subscription">查看說明 →</a>
       </div>
       <div class="support-card">
-        <span class="icon">🛠</span>
+        <div class="icon-cell" aria-hidden="true"><i data-lucide="wrench"></i></div>
         <h3>技術問題</h3>
         <p>App 閃退、通知未顯示、小工具不更新等常見技術問題。</p>
         <a href="#technical">查看說明 →</a>
@@ -257,7 +285,7 @@
       <div class="faq-item">
         <div class="faq-q">如何收藏單字？</div>
         <div class="faq-a">
-          在每日單字頁面，點擊單字卡右下角的「⭐ 收藏」按鈕，即可將該單字加入收藏庫。點擊主畫面右側的書本圖示可查看所有收藏單字及其例句。
+          在每日單字頁面，點擊單字卡右下角的「星形／收藏」按鈕，即可將該單字加入收藏庫。點擊主畫面右側的書本圖示可查看所有收藏單字及其例句。
         </div>
       </div>
 
@@ -378,7 +406,7 @@
 
     <!-- Contact -->
     <div class="contact-section">
-      <div class="icon">✉️</div>
+      <div class="icon-cell-contact" aria-hidden="true"><i data-lucide="mail"></i></div>
       <h3>需要進一步協助？</h3>
       <p>如果上述常見問題無法解決你的問題，請透過電子郵件聯絡我們，我們會盡快回覆。</p>
       <a href="mailto:support@voca.app" class="btn btn-primary">寄信給我們</a>
@@ -418,7 +446,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 VOCA. 保留所有權利。</p>
+      <p>© 2026 VOCA. 保留所有權利。</p>
       <div style="display: flex; gap: 16px;">
         <a href="privacy.html">隱私權政策</a>
         <a href="terms.html">使用條款</a>
@@ -427,5 +455,7 @@
   </div>
 </footer>
 
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="common-init.js" defer></script>
 </body>
 </html>
