@@ -369,10 +369,11 @@
 
     .pricing-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      max-width: 700px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
       margin: 0 auto;
+      align-items: stretch;
     }
 
     /* FAQ */
@@ -470,7 +471,7 @@
       .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
       .steps-grid::before { display: none; }
 
-      .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
     }
   </style>
 </head>
@@ -796,14 +797,14 @@
     <div class="text-center" style="margin-bottom: 48px;">
       <span class="section-label">訂閱方案</span>
       <h2 class="section-title">簡單透明，一個方案搞定</h2>
-      <p class="section-subtitle">無廣告、無限制、完整功能。選擇適合你的訂閱週期，隨時可以取消。</p>
+      <p class="section-subtitle">無廣告、無限制、完整功能。月費與年費方案可隨時在 App Store 取消；終身方案為一次性買斷。</p>
     </div>
 
     <div class="pricing-grid">
       <div class="pricing-card">
         <div class="pricing-plan-name">月訂閱</div>
-        <div class="pricing-price"><sup>$</sup>2.99<sub>/月</sub></div>
-        <div class="pricing-desc">彈性訂閱，隨時取消。適合想先試用的學習者。</div>
+        <div class="pricing-price"><sup>$</sup>0.99<sub>/月</sub></div>
+        <div class="pricing-desc">按月續訂，隨時取消。最輕鬆的試用方式。</div>
         <ul class="pricing-features">
           <li>每日精選 NGSL 核心單字</li>
           <li>基礎 & 進階雙模式例句</li>
@@ -822,8 +823,8 @@
       <div class="pricing-card featured">
         <div class="pricing-badge">最受歡迎</div>
         <div class="pricing-plan-name">年訂閱</div>
-        <div class="pricing-price"><sup>$</sup>19.99<sub>/年</sub></div>
-        <div class="pricing-desc">相當於每月 $1.67，省下 44%。認真學習者的最佳選擇。</div>
+        <div class="pricing-price"><sup>$</sup>9.99<sub>/年</sub></div>
+        <div class="pricing-desc">相當於每月約 $0.83，較月付一年省下約 16%。</div>
         <ul class="pricing-features">
           <li>每日精選 NGSL 核心單字</li>
           <li>基礎 & 進階雙模式例句</li>
@@ -835,13 +836,33 @@
           <li>無廣告</li>
         </ul>
         <a href="#" class="btn btn-primary" style="width: 100%; display: flex;">
-          立即訂閱，省 44%
+          立即訂閱（年省約 16%）
+        </a>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-badge pricing-badge--lifetime">一次付費</div>
+        <div class="pricing-plan-name">終身買斷</div>
+        <div class="pricing-price"><sup>$</sup>29.99<sub>買斷</sub></div>
+        <div class="pricing-desc">單次付款，長期使用不需續訂。適合打算一直學下去的你。</div>
+        <ul class="pricing-features">
+          <li>每日精選 NGSL 核心單字</li>
+          <li>基礎 & 進階雙模式例句</li>
+          <li>iOS 主畫面小工具</li>
+          <li>每日推播通知提醒</li>
+          <li>連勝紀錄 & 學習追蹤</li>
+          <li>收藏單字庫</li>
+          <li>9 種介面語言</li>
+          <li>無廣告</li>
+        </ul>
+        <a href="#" class="btn btn-outline" style="width: 100%; display: flex;">
+          取得終身方案
         </a>
       </div>
     </div>
 
     <div style="text-align: center; margin-top: 24px; font-size: 13px; color: var(--ink-disabled); line-height: 1.6;">
-      透過 Apple 帳號安全付款 · 可隨時在 App Store 中取消訂閱<br/>
+      透過 Apple 帳號安全付款 · 訂閱方案可隨時在 App Store 中取消<br/>
       如有問題請查看<a href="support.html" style="color: var(--primary); text-decoration: none;"> 支援頁面</a> 或<a href="terms.html" style="color: var(--primary); text-decoration: none;">訂閱條款</a>
     </div>
   </div>
@@ -857,7 +878,7 @@
 
     <div class="faq-item">
       <div class="faq-q">VOCA 有免費試用版嗎？</div>
-      <div class="faq-a">VOCA 目前提供純訂閱制，不含永久免費版本。訂閱後可隨時透過 App Store 取消，不會有任何隱藏費用。</div>
+      <div class="faq-a">VOCA 目前為付費制（月訂閱、年訂閱或終身買斷），不含永久免費版本。<strong>月／年方案</strong>可隨時透過 App Store 取消自動續費；終身買斷為一次性購買。無隱藏費用。</div>
     </div>
 
     <div class="faq-item">
@@ -903,7 +924,7 @@
       <span class="as-main">App Store</span>
     </span>
   </a>
-  <div class="cta-note">僅需 $2.99/月 或 $19.99/年 · 隨時取消 · 無廣告</div>
+  <div class="cta-note">月付 $0.99 · 年付 $9.99 · 終身 $29.99 · 訂閱可隨時取消 · 無廣告</div>
 </div>
 
 <!-- Footer -->
@@ -931,8 +952,9 @@
       <div class="footer-links">
         <h4>訂閱</h4>
         <ul>
-          <li><a href="#pricing">月訂閱方案</a></li>
-          <li><a href="#pricing">年訂閱方案</a></li>
+          <li><a href="#pricing">月訂閱</a></li>
+          <li><a href="#pricing">年訂閱</a></li>
+          <li><a href="#pricing">終身買斷</a></li>
         </ul>
       </div>
 
