@@ -10,9 +10,17 @@
     }
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initLucide);
-  } else {
+  function boot() {
     initLucide();
+    if (typeof window.VocaLandingI18n !== "undefined") {
+      window.VocaLandingI18n.apply(window.VocaLandingI18n.getLocale());
+      initLucide();
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
   }
 })();

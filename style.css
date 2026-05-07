@@ -141,6 +141,30 @@ nav {
   transform: translateY(-1px);
 }
 
+.voca-lang-wrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.voca-lang-select {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-secondary);
+  background: white;
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-full);
+  padding: 6px 12px;
+  cursor: pointer;
+  max-width: 148px;
+}
+
+.voca-lang-select:hover {
+  border-color: var(--primary-light);
+  color: var(--ink);
+}
+
 /* ===== BUTTONS ===== */
 .btn {
   display: inline-flex;
