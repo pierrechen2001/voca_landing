@@ -1,0 +1,101 @@
+{
+  "zh-TW": {
+    "meta_terms_title": "使用條款 — VOCA",
+    "meta_terms_desc": "VOCA App 使用條款、訂閱服務規範及 Apple 標準 EULA。",
+    "terms_nav_home": "首頁",
+    "terms_breadcrumb": "使用條款",
+    "terms_h1": "使用條款",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "頁面",
+    "terms_foot_legal": "法律",
+    "terms_foot_home": "首頁"
+  },
+  "zh-CN": {
+    "meta_terms_title": "使用条款 — VOCA",
+    "meta_terms_desc": "VOCA App 使用条款、订阅服务规范及 Apple 标准 EULA。",
+    "terms_nav_home": "首页",
+    "terms_breadcrumb": "使用条款",
+    "terms_h1": "使用条款",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "页面",
+    "terms_foot_legal": "法律",
+    "terms_foot_home": "首页"
+  },
+  "ja": {
+    "meta_terms_title": "利用規約 — VOCA",
+    "meta_terms_desc": "VOCA App の利用規約、サブスクリプション条件、Apple 標準 EULA。",
+    "terms_nav_home": "ホーム",
+    "terms_breadcrumb": "利用規約",
+    "terms_h1": "利用規約",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "ページ",
+    "terms_foot_legal": "法的情報",
+    "terms_foot_home": "ホーム"
+  },
+  "ko": {
+    "meta_terms_title": "이용 약관 — VOCA",
+    "meta_terms_desc": "VOCA App 이용 약관, 구독 조건 및 Apple 표준 EULA.",
+    "terms_nav_home": "홈",
+    "terms_breadcrumb": "이용 약관",
+    "terms_h1": "이용 약관",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "페이지",
+    "terms_foot_legal": "법적 고지",
+    "terms_foot_home": "홈"
+  },
+  "id": {
+    "meta_terms_title": "Ketentuan Penggunaan — VOCA",
+    "meta_terms_desc": "Ketentuan penggunaan VOCA, langganan, dan Apple Standard EULA.",
+    "terms_nav_home": "Beranda",
+    "terms_breadcrumb": "Ketentuan penggunaan",
+    "terms_h1": "Ketentuan Penggunaan",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "Halaman",
+    "terms_foot_legal": "Hukum",
+    "terms_foot_home": "Beranda"
+  },
+  "vi": {
+    "meta_terms_title": "Điều Khoản Sử Dụng — VOCA",
+    "meta_terms_desc": "Điều khoản sử dụng VOCA, đăng ký và Apple Standard EULA.",
+    "terms_nav_home": "Trang chủ",
+    "terms_breadcrumb": "Điều khoản sử dụng",
+    "terms_h1": "Điều Khoản Sử Dụng",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "Trang",
+    "terms_foot_legal": "Pháp lý",
+    "terms_foot_home": "Trang chủ"
+  },
+  "th": {
+    "meta_terms_title": "ข้อกำหนดการใช้งาน — VOCA",
+    "meta_terms_desc": "ข้อกำหนดการใช้งาน VOCA การสมัครสมาชิก และ Apple Standard EULA",
+    "terms_nav_home": "หน้าแรก",
+    "terms_breadcrumb": "ข้อกำหนดการใช้งาน",
+    "terms_h1": "ข้อกำหนดการใช้งาน",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "หน้า",
+    "terms_foot_legal": "กฎหมาย",
+    "terms_foot_home": "หน้าแรก"
+  },
+  "es": {
+    "meta_terms_title": "Términos de Uso — VOCA",
+    "meta_terms_desc": "Términos de uso de VOCA, suscripción y Apple Standard EULA.",
+    "terms_nav_home": "Inicio",
+    "terms_breadcrumb": "Términos de uso",
+    "terms_h1": "Términos de Uso",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "Páginas",
+    "terms_foot_legal": "Legal",
+    "terms_foot_home": "Inicio"
+  },
+  "pt": {
+    "meta_terms_title": "Termos de Utilização — VOCA",
+    "meta_terms_desc": "Termos de utilização do VOCA, subscrição e Apple Standard EULA.",
+    "terms_nav_home": "Início",
+    "terms_breadcrumb": "Termos de utilização",
+    "terms_h1": "Termos de Utilização",
+    "terms_subtitle": "Terms of Service",
+    "terms_foot_pages": "Páginas",
+    "terms_foot_legal": "Legal",
+    "terms_foot_home": "Início"
+  }
+}

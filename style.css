@@ -85,6 +85,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
+  position: relative;
 }
 
 .nav-logo {
@@ -93,12 +95,15 @@ nav {
   gap: 10px;
   text-decoration: none;
   color: var(--ink);
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .nav-logo img {
   width: 32px;
   height: 32px;
   border-radius: var(--radius-sm);
+  flex-shrink: 0;
 }
 
 .nav-logo span {
@@ -106,6 +111,13 @@ nav {
   font-weight: 700;
   letter-spacing: -0.3px;
   color: var(--primary);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 0;
 }
 
 .nav-links {
@@ -121,6 +133,7 @@ nav {
   font-size: 14px;
   font-weight: 500;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover { color: var(--primary); }
@@ -139,6 +152,76 @@ nav {
   background: var(--primary-dark) !important;
   color: white !important;
   transform: translateY(-1px);
+}
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin: 0 -8px 0 0;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.nav-toggle:hover {
+  background: rgba(78, 127, 160, 0.08);
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.nav-toggle-icon {
+  position: relative;
+  width: 20px;
+  height: 14px;
+}
+
+.nav-toggle-bar,
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 0.25s ease, top 0.25s ease, opacity 0.2s ease;
+}
+
+.nav-toggle-bar {
+  top: 6px;
+}
+
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+  content: "";
+}
+
+.nav-toggle-bar::before { top: -6px; }
+.nav-toggle-bar::after { top: 6px; }
+
+nav.nav-open .nav-toggle-bar {
+  background: transparent;
+}
+
+nav.nav-open .nav-toggle-bar::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+nav.nav-open .nav-toggle-bar::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .voca-lang-wrap {
@@ -163,6 +246,92 @@ nav {
 .voca-lang-select:hover {
   border-color: var(--primary-light);
   color: var(--ink);
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0 16px;
+    position: sticky;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-actions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 0 16px;
+    background: rgba(243, 249, 255, 0.98);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid var(--divider);
+    box-shadow: 0 12px 32px rgba(78, 127, 160, 0.12);
+    max-height: calc(100dvh - 60px);
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+  }
+
+  nav.nav-open .nav-actions {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-top: 1px solid var(--divider);
+  }
+
+  .nav-links li:first-child {
+    border-top: none;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 15px;
+    white-space: normal;
+  }
+
+  .nav-links a.btn-nav {
+    margin: 12px 16px 4px;
+    padding: 12px 18px;
+    text-align: center;
+  }
+
+  .voca-lang-wrap {
+    width: 100%;
+    padding: 12px 16px 0;
+  }
+
+  .voca-lang-select {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+body.nav-menu-open {
+  overflow: hidden;
 }
 
 /* ===== BUTTONS ===== */
@@ -284,7 +453,6 @@ section { padding: 80px 24px; }
   .grid-3 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   section { padding: 60px 20px; }
-  nav { padding: 0 16px; }
 }
 
 @media (max-width: 480px) {

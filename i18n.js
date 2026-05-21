@@ -149,7 +149,8 @@
         }
       });
       wrap.appendChild(sel);
-      nav.appendChild(wrap);
+      var actions = nav.querySelector(".nav-actions");
+      (actions || nav).appendChild(wrap);
     }
   }
 
